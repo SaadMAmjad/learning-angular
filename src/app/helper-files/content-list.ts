@@ -1,17 +1,18 @@
 class ContentList {
-  items: Content[];
-  static contentCount = 0;
 
-  constructor(item: Content) {
-    this.items[0] = item;
+  constructor() {
+    this.items = [];
+    this.increaseCount();
   }
 
-  get items(): Content[]{
+  get getItems(): Content[]{
     return this.items;
   }
+  static contentCount = 0;
+  items: Content[];
 
-  increaseCount() {
-    return ++ContentList.contentCount;
+  increaseCount(): number {
+    return ContentList.contentCount++;
   }
 
   numberOfItems(): number {
