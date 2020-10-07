@@ -1,8 +1,9 @@
-class ContentList {
+import {Content} from './content-interface';
+
+export class ContentList {
 
   constructor() {
     this.items = [];
-    this.increaseCount();
   }
 
   get getItems(): Content[]{
@@ -11,8 +12,8 @@ class ContentList {
   static contentCount = 0;
   items: Content[];
 
-  increaseCount(): number {
-    return ContentList.contentCount++;
+  increaseCount(content: Content): void {
+    this.items.push(content);
   }
 
   numberOfItems(): number {
@@ -20,10 +21,10 @@ class ContentList {
   }
 
   userOutput(id: number): string {
-    return '<h1> ID: ' + this.items[id].id + '</h1>' +
-      '<h2> Author: ' + this.items[id].author + '</h2>' +
+    return '<p> ID: ' + this.items[id].id + '</p>' +
       '<h2> Title: ' + this.items[id].title + '</h2>' +
-      '<h2> Body:  ' + this.items[id].body + '</h2>';
+      '<b> Author: ' + this.items[id].author + '</b>' +
+      '<p> Body:  ' + this.items[id].body + '</p>';
   }
 
 }
