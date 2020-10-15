@@ -1,1 +1,8 @@
-<span [innerHTML] = "display"></span>
+<div class="content-{{ stuff.id }}">
+  <h1 class="title">Title: {{ stuff.title }}</h1>
+  <h2 class="author">Author: {{ stuff.author }}</h2>
+  <img class="image" src="{{ stuff.imageUrl }}">
+  <p class="body">Tags: {{ stuff.tags }}</p>
+  <p class="body">Type: {{ stuff.type }}</p>
+  <p class="body">Body: {{ stuff.body }}</p>
+</div>
