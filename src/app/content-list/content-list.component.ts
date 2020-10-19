@@ -17,7 +17,7 @@ export class ContentListComponent implements OnInit {
       type: 'reddit post',
       title: 'Man loses a bet',
       body: 'Man loses a bet and has to live in third person for a day',
-      tags: ['funny', 'cringe']
+      tags: ['funny', ' cringe']
     },
     {
       id: 1,
@@ -26,7 +26,7 @@ export class ContentListComponent implements OnInit {
       type: 'guide',
       title: 'How to build Bakasura (Smite)',
       body: 'Build protections. Basically go full tank build',
-      tags: ['troll', 'pro gamer']
+      tags: ['troll', ' pro gamer']
     },
     {
       id: 2,
@@ -44,7 +44,7 @@ export class ContentListComponent implements OnInit {
       type: 'news',
       title: 'Lorem Ipsum',
       body: 'Lorem Ipsum',
-      tags: ['space', 'moon']
+      tags: ['space', ' moon']
     },
     {
       id: 4,
@@ -53,7 +53,7 @@ export class ContentListComponent implements OnInit {
       type: 'photography',
       title: 'Lorem Ipsum',
       body: 'Lorem Ipsum',
-      tags: ['landscape', 'moon']
+      tags: ['landscape', ' moon']
     }
     ];
   }

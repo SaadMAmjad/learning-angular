@@ -8,8 +8,11 @@ import {Content} from '../helper-files/content-interface';
 })
 export class ContentCardComponent implements OnInit {
   @Input() stuff: Content;
-
   constructor() {
+  }
+
+  showId(): void{
+    console.log('id number ' + this.stuff.id);
   }
 
   ngOnInit(): void {
