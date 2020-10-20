@@ -1,1 +1,13 @@
-<app-content-card *ngFor="let item of stuff;" [stuff]="item"></app-content-card>
+<app-content-card *ngFor="let item of stuff | defaultType: 'news';" [stuff]="item"></app-content-card>
+<br>
+<br>
+<br>
+<app-content-card *ngFor="let item of stuff | defaultType: 'reddit post';" [stuff]="item"></app-content-card>
+<br>
+<br>
+<br>
+<app-content-card *ngFor="let item of stuff | defaultType: 'guide';" [stuff]="item"></app-content-card>
+<br>
+<br>
+<br>
+<app-content-card *ngFor="let item of stuff | defaultType: 'photography';" [stuff]="item"></app-content-card>
