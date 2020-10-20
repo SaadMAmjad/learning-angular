@@ -1,13 +1,6 @@
-<app-content-card *ngFor="let item of stuff | defaultType: 'news';" [stuff]="item"></app-content-card>
-<br>
-<br>
-<br>
-<app-content-card *ngFor="let item of stuff | defaultType: 'reddit post';" [stuff]="item"></app-content-card>
-<br>
-<br>
-<br>
-<app-content-card *ngFor="let item of stuff | defaultType: 'guide';" [stuff]="item"></app-content-card>
-<br>
-<br>
-<br>
-<app-content-card *ngFor="let item of stuff | defaultType: 'photography';" [stuff]="item"></app-content-card>
+<input type="text" #search>
+<button (click)="searchArray(search.value, stuff)">Search</button>
+<app-content-card class="news" *ngFor="let item of stuff | defaultType: 'news';" [stuff]="item"></app-content-card>
+<app-content-card class="reddit" *ngFor="let item of stuff | defaultType: 'reddit post';" [stuff]="item"></app-content-card>
+<app-content-card class="guide" *ngFor="let item of stuff | defaultType: 'guide';" [stuff]="item"></app-content-card>
+<app-content-card class="pics" *ngFor="let item of stuff | defaultType: 'photography';" [stuff]="item"></app-content-card>

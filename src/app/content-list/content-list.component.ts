@@ -61,4 +61,16 @@ export class ContentListComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  searchArray(value: string, array: Content[]): void {
+    let incrementer = 0;
+    for (const entry of array) {
+      if (entry.title === value) {
+        incrementer++;
+        console.log('Item exists');
+      }
+    }
+    if (incrementer === 0) {
+      console.log('Item does not exist');
+    }
+  }
 }
