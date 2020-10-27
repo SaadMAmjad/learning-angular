@@ -1,8 +1,10 @@
 <div class="content-{{ stuff.id }}">
-  <h1 class="title">Title: {{ stuff.title }}</h1>
+  <h1 appHighlight [type]='"title"' class="title">Title: {{ stuff.title }}</h1>
   <h2 class="author">Author: {{ stuff.author }}</h2>
   <p class="type">Type: {{ stuff.type }}</p>
-  <img (click)="showId()" class="image" src="{{ stuff.imageUrl }}">
+  <div *ngIf="stuff.imageUrl; else elseBlock"><img src="{{ stuff.imageUrl }}" (click)="showId()" class="image"></div>
+  <ng-template #elseBlock><img src="https://actionreactionmma.com/wp-content/uploads/2017/04/default-image-620x600.jpg" (click)="showId()" class="image"></ng-template>
   <p class="body">Body: {{ stuff.body }}</p>
-  <p class="tag">Tags: {{ stuff.tags }}</p>
+  <h3 class="tag">Tags:</h3>
+  <p appHighlight [type]='"tags"' *ngFor="let tag  of stuff.tags" class="tags">{{tag}}</p>
 </div>

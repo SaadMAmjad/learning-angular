@@ -54,6 +54,14 @@ export class ContentListComponent implements OnInit {
       title: 'Lorem Ipsum',
       body: 'Lorem Ipsum',
       tags: ['landscape', ' moon']
+    },
+    {
+      id: 5,
+      author: 'Joseph',
+      type: 'news',
+      title: 'AMD Big Navi',
+      body: 'Next generation AMD graphics cards launch soon. Wait a little to see the competition!',
+      tags: ['computers', ' hardware']
     }
     ];
   }

@@ -7,6 +7,7 @@ import { Asn1DirectiveDirective } from './asn-1-directive.directive';
 import { ContentCardComponent } from './content-card/content-card.component';
 import { ContentListComponent } from './content-list/content-list.component';
 import { DefaultTypePipe } from './default-type.pipe';
+import { HighlightDirective } from './highlight.directive';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { DefaultTypePipe } from './default-type.pipe';
     Asn1DirectiveDirective,
     ContentCardComponent,
     ContentListComponent,
-    DefaultTypePipe
+    DefaultTypePipe,
+    HighlightDirective
   ],
   imports: [
     BrowserModule
