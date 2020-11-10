@@ -1,3 +1,4 @@
+<app-create-content></app-create-content>
 <input type="text" #search>
 <button (click)="searchArray(search.value, stuff)">Search</button>
 <app-content-card class="news" *ngFor="let item of stuff | defaultType: 'news';" [stuff]="item"></app-content-card>
