@@ -9,6 +9,7 @@ import { ContentListComponent } from './content-list/content-list.component';
 import { DefaultTypePipe } from './default-type.pipe';
 import { HighlightDirective } from './highlight.directive';
 import { CreateContentComponent } from './create-content/create-content.component';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { CreateContentComponent } from './create-content/create-content.componen
     CreateContentComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {Content} from '../helper-files/content-interface';
 
 @Component({
@@ -80,5 +80,11 @@ export class ContentListComponent implements OnInit {
     if (incrementer === 0) {
       console.log('Item does not exist');
     }
+  }
+
+  addContentToList(newContentFromChild: Content): void {
+    this.stuff.push(newContentFromChild);
+    // We need to clone the array for the pipe to work
+    this.stuff = Object.assign([], this.stuff);
   }
 }
