@@ -8,6 +8,7 @@ import { ContentCardComponent } from './content-card/content-card.component';
 import { ContentListComponent } from './content-list/content-list.component';
 import { DefaultTypePipe } from './default-type.pipe';
 import { HighlightDirective } from './highlight.directive';
+import { MessagesComponent } from './messages/messages.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { HighlightDirective } from './highlight.directive';
     ContentCardComponent,
     ContentListComponent,
     DefaultTypePipe,
-    HighlightDirective
+    HighlightDirective,
+    MessagesComponent
   ],
   imports: [
     BrowserModule

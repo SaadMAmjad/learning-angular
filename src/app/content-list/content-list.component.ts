@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import {Content} from '../helper-files/content-interface';
-import {STUFF} from '../helper-files/contentDb';
 import {ContentArrayService} from '../services/content-array.service';
 
 @Component({
